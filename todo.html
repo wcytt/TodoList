@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>todo list(待办事项)</title>
+        <link rel="stylesheet" href="todo.css">
+    </head>
+    <body>
+        <!-- todo 包含的所有内容 -->
+        <div class="all">
+            <!-- 欢迎 -->
+            <div class="welcome">
+                 <span class="welcome_todoApp">ToDo App</span>
+                 <span class="welcome_welcome">welcome</span>
+            </div>
+            <!-- 添加 todo 组件 -->
+            <div class="all_head_title">
+                <span class="todo_list_logo">Todo List</span>
+                <div class="all_head_add">
+                    <input class="new_todo_input" type="text" value="" placeholder="请输入Todo">
+                    <button class="button_addtodo" type="button">Add New Todo</button>
+                </div>
+            </div>
+            <!-- todo 列表不变的头部 -->
+            <div class="container_head">
+                <span class="span_title_1">事项</span>
+                <span class="span_title_2">状态</span>
+                <span class="span_title_3">操作</span>
+            </div>
+            <!-- 所有的 todo 和操作按钮 -->
+            <div class="container">
+                <!-- <div class="todos" data-id=0>
+                    <span class="todo_content">吃饭</span>
+                    <span class="state">未完成</span>
+                    <div class="control_buttons">
+                        <button class="button_done" type="button">完成</button>
+                        <button class="button_delete" type="button">删除</button>
+                    </div>
+                </div> -->
+            </div>
+            <!-- 翻页 -->
+            <div class="page">
+                <button class="last_page"><</button>
+                <div class="pagination">
+                    <span class="page_1 page_number active">1</span>
+                </div>
+                <button class="next_page">></button>
+            </div>
+        </div>
+        <script src='todo.js'></script>
+    </body>
+</html>

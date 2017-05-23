@@ -1,0 +1,230 @@
+/*要显示全部*/
+.all {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/*全部 button 按钮的鼠标样式*/
+button {
+    cursor: pointer;
+}
+
+/*完成、删除按钮*/
+.button_done {
+    position: relative;;
+    right: 0px;
+    top: 25%;
+    color: white;
+    border: solid 1px #18bb9c;
+    background: #18bb9c;
+    border-radius: 8%;
+}
+.button_delete {
+    position: relative;;
+    right: 0px;
+    top: 25%;
+    color: white;
+    border: solid 1px #e1544d;
+    background: #e1544d;
+    border-radius: 8%;
+}
+
+/*首行欢迎条*/
+.welcome {
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    height: 4%;
+    background: #2d3e50;
+    color: white;
+}
+
+/*首行右边*/
+.welcome_welcome {
+    position: absolute;
+    top: 13%;
+    right: 2%;
+}
+
+/*首行左边*/
+.welcome_todoApp {
+    position: absolute;
+    top: 13%;
+    left: 2%;
+}
+
+/*todo 添加行*/
+.all_head_title {
+    width: 75%;
+    height: 7%;
+    position: relative;
+    margin: 0 auto;
+}
+
+/*添加组*/
+.all_head_add {
+    position: absolute;
+    right: 0%;
+    top: 25%;
+}
+
+/*添加按钮*/
+.button_addtodo {
+    color: white;
+    border: solid 1px #2d3e50;
+    background: #2d3e50;
+    border-radius: 8%;*/
+}
+
+/*添加行左边 logo*/
+.todo_list_logo {
+    position: absolute;
+    top: 25%;
+    left: 3%;
+    font-size: 1.5em;
+}
+
+/*todo 完成，删除按钮*/
+.control_buttons {
+    display: inline-block;
+}
+
+/*todo 的完成状态*/
+.done {
+    background: gray !important;
+}
+
+/*当前要显示的页码*/
+.active {
+    background: #0e7562;
+}
+
+/*列表头部*/
+.container_head {
+    width: 75%;
+    top: 3%;
+    position: relative;
+    height: 2em;
+    margin: 0 auto;
+    border-top: solid 1px gray;
+    padding-top: 1%;
+}
+
+/*列表头部名称*/
+.span_title_1 {
+    position: absolute;
+    left: 1%;
+}
+.span_title_2 {
+    position: absolute;
+    left: 32%;
+}
+.span_title_3 {
+    position: absolute;
+    left: 62%;
+}
+
+/*todo 列表容器*/
+.container {
+    width: 75%;
+    margin: 0 auto;
+    position: relative;
+    top: 4%;
+}
+
+/*每一行列表*/
+.todos {
+    position: relative;
+    height: 2em;
+    /*行高和高度一样，使内容垂直居中*/
+    line-height: 2em;
+}
+
+/*todo 列表隔行显示相同颜色*/
+.todos:nth-child(2n + 1) {
+    background: #f6f6f6;
+}
+
+/*列表中的 todo 项*/
+.todo_content {
+    position: absolute;
+    left: 1%;
+}
+
+/*列表中的完成状态描述*/
+.state {
+    position: absolute;
+    left: 32%;
+}
+
+/*列表中的操作按钮*/
+.control_buttons {
+    position: relative;
+    left: 62%;
+}
+
+/*翻页行*/
+.page {
+    position: absolute;
+    width: 80%;
+    margin: 0% 10%;
+    text-align: center;
+    bottom: 30%;
+    height: 1.5em;
+}
+.page > * {
+    display: inline-block;
+    background: #18bb9c;
+    color: white;
+    border-top: none;
+    border-bottom: none;
+}
+/*翻页按钮*/
+.last_page {
+    position: relative;
+    top: -47%;
+    height: 2.38em;
+    width: 2.1em;
+    border-right: solid 1px black;
+    border-left: none;
+    left: 0.3%;
+    /*圆角，左上角开始，顺时针四个角*/
+    border-radius: 20% 0 0 20%;
+    outline: none;
+    /*鼠标样式*/
+    cursor: pointer;
+}
+.next_page {
+    position: relative;
+    top: -47%;
+    height: 2.38em;
+    width: 2.1em;
+    border-left: solid 1px black;
+    border-right: none;
+    right: 0.55%;
+    /*圆角，左上角开始，顺时针四个角*/
+    border-radius: 0 20% 20% 0;
+    outline: none;
+    /*鼠标养生*/
+    cursor: pointer;
+}
+
+/*全部的页码*/
+.pagination {
+    position: relative;
+    top: 5%;
+}
+
+/*每一个页码*/
+.page_number {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    /*浮动，消除两个span之间的空隙*/
+    float: left;
+    /*行距，使span中的文字垂直居中*/
+    line-height: 2em;
+    /*鼠标样式*/
+    cursor: pointer;
+}
