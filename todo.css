@@ -167,3 +167,84 @@ button {
     background: #18bb9c;
     border-radius: 50%;
 }
+.foo {
+    border: 1px blue dashed;
+    width: 100px;
+    height: 50px;
+    display: block;
+}
+
+/* 弹窗动画样式 */
+.alert-main-one, .alert-main-two{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(143,27,15);
+    animation: 0.5s alertBg linear forwards;
+}
+@keyframes alertBg {
+    0% {
+        opacity: 0.5;
+        background: rgb(143,27,15);
+    }
+    100% {
+        opacity: 0.93;
+        background: rgb(143,27,15);
+    }
+}
+
+.alert-container {
+    margin: 0 auto;
+    width: 400px;
+    position: relative;
+    top: 50%;
+    animation: 0.5s alertContainer linear forwards;
+}
+@keyframes alertContainer {
+    0% {
+        transform: scale(0) translateY(-50%);
+        opacity: 0.4;
+    }
+    50% {
+        transform: scale(0.5) translateY(-50%);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1) translateY(-50%);
+        opacity: 1;
+    }
+}
+
+.alert-title {
+    text-align: center;
+    font-size: 27px;
+    background: lightblue;
+    height: 50px;
+    line-height: 50px;
+}
+.alert-message {
+    text-align: center;
+    padding: 10px 5px;
+    background: white;
+    height: 150px;
+    line-height: 150px;
+    font-size: 22px;
+}
+.alert-control {
+    font-size: 0;
+    height: 50px;
+}
+.alert-button {
+    width: 100%;
+    height: 100%;
+    font-size: 22px;
+    border: 0;
+}
+.alert-button-two {
+    width: 50%;
+    height: 100%;
+    font-size: 22px;
+    border: 0;
+}
